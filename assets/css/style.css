@@ -38,8 +38,7 @@ body{
 
 /* Hero split layout */
 .hero{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;padding:4rem 0}
-.hero-left img{width:100%;max-width:520px;border-radius:12px;display:block}
-.hero-line{width:100vw;max-width:none;height:5px;background:#000;border-radius:0;margin:1rem 0 0;display:block;position:relative;left:50%;transform:translateX(-50%)}
+.hero-left img{width:100%;max-width:520px;border-radius:12px}
 .tagline{font-size:1.25rem;font-weight:600;margin:0.5rem 0}
 .support{color:var(--muted);margin-bottom:1rem}
 .cta{display:flex;gap:0.75rem}
