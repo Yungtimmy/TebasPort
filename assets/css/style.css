@@ -3,9 +3,9 @@
    Replace or extend with Tailwind if you prefer a utility approach. */
 
 :root{
-  --bg:#fbfbfd; /* very light gray */
+  --bg:#dbeafe; /* soft light blue */
   --text:#0f1724; /* dark gray */
-  --muted:#6b7280;
+  --muted:#475569;
   --accent:#60a5fa; /* light blue */
   --container:1100px;
 }
