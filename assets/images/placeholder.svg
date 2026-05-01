@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560" fill="none">
-  <rect width="800" height="560" rx="20" fill="#ffffff" stroke="#e6eefc"/>
-  <g>
-    <rect x="48" y="56" width="320" height="200" rx="12" fill="#f8fbff" stroke="#cfe6ff"/>
-    <rect x="400" y="56" width="352" height="200" rx="12" fill="#f8fbff" stroke="#cfe6ff"/>
-    <rect x="48" y="288" width="704" height="200" rx="12" fill="#f8fbff" stroke="#cfe6ff"/>
-  </g>
-  <text x="48" y="520" fill="#9bbef9" font-size="18">Illustration placeholder — replace with your artwork</text>
-</svg>
