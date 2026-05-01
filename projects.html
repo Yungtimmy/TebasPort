@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projects — TEBASV2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Khand:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header class="nav-wrap">
+      <nav class="nav container">
+        <a class="logo" href="/">TEBASV2</a>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="section reveal">
+        <h1 class="section-title">Projects</h1>
+        <p class="lead">Shortlist of recent projects — each entry explains the problem, what I built, and why it matters.</p>
+
+        <div class="projects-grid">
+          <article class="project-card" id="atlas">
+            <h3>Project Atlas</h3>
+            <p class="muted">Problem: Teams lacked a single source of truth for analytics.</p>
+            <p>Built: A lightweight dashboard and REST API that aggregates key metrics across services.</p>
+            <p>Why it matters: Reduced time-to-insight and helped teams make faster product decisions.</p>
+            <p class="tech">Tech: React (UI concept), Node, Postgres, Docker</p>
+            <a class="link" href="#">View repo →</a>
+          </article>
+
+          <article class="project-card" id="swiftforms">
+            <h3>SwiftForms</h3>
+            <p class="muted">Problem: Creating accessible, validated forms was slow.</p>
+            <p>Built: A modular form renderer with server-side validation and reusable components.</p>
+            <p>Why it matters: Teams ship forms faster with fewer accessibility regressions.</p>
+            <p class="tech">Tech: Vanilla JS, Node, JSON Schema</p>
+            <a class="link" href="#">View demo →</a>
+          </article>
+
+          <article class="project-card" id="pulset">
+            <h3>PulseShop</h3>
+            <p class="muted">Problem: Slow storefronts reduced conversions.</p>
+            <p>Built: Performance-focused shopfront with streamlined checkout flow.</p>
+            <p>Why it matters: Faster load times and simplified checkout improved conversions for small retailers.</p>
+            <p class="tech">Tech: Tailwind, Node, Stripe</p>
+            <a class="link" href="#">Read case study →</a>
+          </article>
+
+          <article class="project-card" id="toolkit">
+            <h3>Dev Toolkit</h3>
+            <p class="muted">Problem: Onboarding new devs took too long.</p>
+            <p>Built: A CLI and docs bundle to standardize local setup and common tasks.</p>
+            <p>Why it matters: Onboarding time dropped and local parity improved.</p>
+            <p class="tech">Tech: Node CLI, Bash, Docker</p>
+            <a class="link" href="#">Get the repo →</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="footer-brand">TEBASV2</span>
+        <span class="footer-year">© <span id="year-projects"></span></span>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

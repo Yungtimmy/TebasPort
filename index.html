@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TEBASV2 — I build digital products</title>
+    <meta name="description" content="TEBASV2 — I build innovative digital solutions and meaningful projects" />
+  <!-- Fonts: Khand (headings) and Inter (fallback body). Add local Chubbo & Switzer in assets/fonts as needed. -->
+  <link href="https://fonts.googleapis.com/css2?family=Khand:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header class="nav-wrap">
+      <nav class="nav container">
+        <a class="logo" href="/">TEBASV2</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero (split layout) -->
+      <section class="hero container">
+        <div class="hero-left reveal">
+          <!-- Illustration / Image placeholder -->
+          <img src="/assets/images/placeholder.svg" alt="TEBASV2 illustration" />
+        </div>
+        <div class="hero-right reveal">
+          <h1 class="logo-font">TEBASV2</h1>
+          <p class="tagline">I build innovative digital solutions and meaningful projects.</p>
+          <p class="support">A pragmatic builder focusing on frontend clarity, backend reliability, and real-world impact.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="/projects.html">View Projects</a>
+            <a class="btn btn-outline" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured projects preview -->
+      <section class="section container" id="featured">
+        <h2 class="section-title">Featured projects</h2>
+        <div class="projects-preview">
+          <article class="card reveal">
+            <h3>Project Atlas</h3>
+            <p class="muted">A dashboard that centralizes analytics for small teams.</p>
+            <p class="card-desc">Solved fragmented reporting by building a unified, lightweight analytics UI and REST API.</p>
+            <a class="link" href="/projects.html#atlas">Learn more →</a>
+          </article>
+
+          <article class="card reveal">
+            <h3>SwiftForms</h3>
+            <p class="muted">Fast, accessible form builder for product teams.</p>
+            <p class="card-desc">Built a modular form renderer and server validation layer to reduce time-to-launch.</p>
+            <a class="link" href="/projects.html#swiftforms">Learn more →</a>
+          </article>
+
+          <article class="card reveal">
+            <h3>PulseShop</h3>
+            <p class="muted">Shopfront focused on performance and conversion.</p>
+            <p class="card-desc">Improved page speed and checkout flow, increasing conversions for small retailers.</p>
+            <a class="link" href="/projects.html#pulset">Learn more →</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills overview -->
+      <section class="section container" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid reveal">
+          <div>
+            <h4>Frontend</h4>
+            <ul>
+              <li>HTML, CSS (Tailwind-friendly)</li>
+              <li>Vanilla JS, progressive enhancement</li>
+              <li>Responsive & accessible UI</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Backend</h4>
+            <ul>
+              <li>Node / Express</li>
+              <li>APIs & data modeling</li>
+              <li>Auth, testing, deployments</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Tools</h4>
+            <ul>
+              <li>Git, Docker, CI</li>
+              <li>Postgres, Redis</li>
+              <li>Figma, VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact (section on home) -->
+      <section class="section container contact" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <p>Interested in collaborating or want to chat about a project? Reach out.</p>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li>GitHub: <a href="#">github.com/yourusername</a></li>
+          <li>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="footer-brand">TEBASV2</span>
+        <span class="footer-year">© <span id="year"></span></span>
+        <span class="footer-tagline">Minimal. Bold. Intentional.</span>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

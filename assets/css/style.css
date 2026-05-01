@@ -1,0 +1,90 @@
+/* Minimal, readable stylesheet following the design directions.
+   This is authored to be editable without requiring Tailwind build.
+   Replace or extend with Tailwind if you prefer a utility approach. */
+
+:root{
+  --bg:#fbfbfd; /* very light gray */
+  --text:#0f1724; /* dark gray */
+  --muted:#6b7280;
+  --accent:#60a5fa; /* light blue */
+  --container:1100px;
+}
+*{box-sizing:border-box}
+*html,body{height:100%}
+/*
+  Font setup:
+  - The site will use Chubbo for the `logo-font` (hero title) if you provide it locally or via a hosted URL.
+  - Switzer is the preferred body font; Inter is used as a fallback and is loaded via Google Fonts in the HTML.
+  To use local fonts, place .woff2 files in /assets/fonts and follow the README in that folder.
+*/
+body{
+  margin:0;
+  font-family: 'Switzer', Inter, ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial;
+  color:var(--text);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.container{max-width:var(--container);margin:0 auto;padding:2rem}
+
+/* Navigation */
+.nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.logo{font-weight:700;letter-spacing:0.6px;color:var(--text);text-decoration:none}
+.logo-font{font-family: 'Chubbo', Georgia, serif; font-size:3.2rem; margin:0}
+.nav-links{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
+.nav-links a{color:var(--text);text-decoration:none;padding:0.25rem 0}
+.nav-wrap{position:sticky;top:0;background:linear-gradient(transparent, rgba(255,255,255,0.6));backdrop-filter:blur(4px);z-index:40}
+.nav-toggle{display:none}
+
+/* Hero split layout */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;padding:4rem 0}
+.hero-left img{width:100%;max-width:520px;border-radius:12px}
+.tagline{font-size:1.25rem;font-weight:600;margin:0.5rem 0}
+.support{color:var(--muted);margin-bottom:1rem}
+.cta{display:flex;gap:0.75rem}
+.btn{display:inline-block;padding:0.7rem 1.1rem;border-radius:8px;text-decoration:none;font-weight:600}
+.btn-primary{background:var(--accent);color:white}
+.btn-outline{border:1px solid var(--accent);color:var(--accent);background:transparent}
+
+/* Sections */
+.section{padding:3rem 0}
+.section-title{font-family:'Khand',sans-serif;font-size:1.6rem;margin:0 0 1rem}
+.lead{font-size:1.05rem;color:var(--text);margin-bottom:1rem}
+
+.projects-preview{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:white;border-radius:10px;padding:1rem;box-shadow:0 6px 18px rgba(15,23,36,0.06)}
+.card h3{margin:0 0 0.25rem}
+.card-desc{color:var(--muted);font-size:0.95rem}
+.link{color:var(--accent);text-decoration:none;font-weight:600}
+
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.skills-grid h4{margin:0 0 0.5rem}
+
+.contact-list{list-style:none;padding:0}
+.contact-list li{margin:0.25rem 0}
+
+/* Projects grid */
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.project-card{background:white;padding:1rem;border-radius:10px;box-shadow:0 8px 28px rgba(15,23,36,0.06)}
+.project-card .tech{font-size:0.9rem;color:var(--muted);margin-top:0.5rem}
+
+/* Footer */
+.footer{border-top:1px solid rgba(15,23,36,0.05);padding:1.5rem 0;margin-top:3rem}
+.footer .container{display:flex;gap:1rem;align-items:center;justify-content:space-between}
+
+/* Reveal animations */
+.reveal{opacity:0;transform:translateY(12px);transition:all 520ms cubic-bezier(.2,.9,.2,1)}
+.reveal.visible{opacity:1;transform:none}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;gap:2rem;padding:2rem 0}
+  .skills-grid{grid-template-columns:1fr}
+  .nav-toggle{display:block}
+  .nav-links{display:none;position:absolute;right:1rem;top:64px;background:transparent;flex-direction:column}
+}
+
+/* Accessibility-focused focus states */
+a:focus{outline:2px dashed var(--accent);outline-offset:3px}
+
+/* End of style.css */
