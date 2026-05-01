@@ -3,10 +3,10 @@
    Replace or extend with Tailwind if you prefer a utility approach. */
 
 :root{
-  --bg:#dbeafe; /* soft light blue */
+  --bg: #B9EAFF; /* soft light blue */
   --text:#0f1724; /* dark gray */
   --muted:#475569;
-  --accent:#60a5fa; /* light blue */
+  --accent:#B9EAFF; /* light blue */
   --container:1100px;
 }
 *{box-sizing:border-box}
