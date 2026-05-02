@@ -3,10 +3,10 @@
    Replace or extend with Tailwind if you prefer a utility approach. */
 
 :root{
-  --bg: #B9EAFF; /* soft light blue */
-  --text:#000000; /* dark gray */
-  --muted:#000000;
-  --accent:#B9EAFF; /* light blue */
+  --bg: #ffffff; /* soft light blue */
+  --text:#f5f5f5; /* dark gray */
+  --muted:#ffffff;
+  --accent:#70b8b8; /* light blue */
   --container:1100px;
 }
 *{box-sizing:border-box}
@@ -21,7 +21,7 @@ body{
   margin:0;
   font-family: 'Switzer', Inter, ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial;
   color:var(--text);
-  background:var(--bg);
+  background: radial-gradient(ellipse at center, #ffffff 0%, #190be2 60%, #000000 100%);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
 }
@@ -42,11 +42,15 @@ body{
 .hero-left img{width:100%;max-width:520px;border-radius:12px}
 .hero-intro{font-family:'Staatliches', 'Arial Black', Arial, sans-serif;font-size:2.8rem;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin:0 0 0.5rem;line-height:0.01}
 .tagline{font-size:1.25rem;font-weight:800;margin:0.5rem 0;position:relative;padding-left:1.4rem}
-.tagline::before{content:'–';position:absolute;left:0;top:0.1rem;color:rgb(3, 0, 0);font-size:2rem;line-height:0.7}.tagline{color:#1E293B}.support{font-family:'Epilogue', Inter, sans-serif;font-weight:700;font-size:1.1rem;color:#084c61;margin-bottom:1rem;line-height:1.5}
+.tagline::before{content:'–';position:absolute;left:0;top:0.1rem;color:rgb(253, 253, 253);font-size:2rem;line-height:0.7}.tagline{color:#ffffff}.support{font-family:'Epilogue', Inter, sans-serif;font-weight:700;font-size:1.1rem;color:#ffffff;margin-bottom:1rem;line-height:1.5}
+.stats-grid{display:flex;gap:6rem;margin-bottom:2rem}
+.stat-column{display:flex;flex-direction:column;align-items:flex-start}
+.stat-value{font-size:3rem;font-weight:600;color:#f7f7f7;letter-spacing:0.025em;font-family:monospace;line-height:1}
+.stat-label{font-size:0.95rem;font-weight:500;color:#ffffff;letter-spacing:0.025em;margin-top:0.25rem}
 .cta{display:flex;gap:0.75rem}
 .btn{display:inline-block;padding:0.7rem 1.1rem;border-radius:8px;text-decoration:none;font-weight:600}
-.btn-primary{background:var(--accent);color:white}
-.btn-outline{border:1px solid var(--accent);color:var(--accent);background:transparent}
+.btn-primary{background:#000000;color:white}
+.btn-outline{border:1px solid #000000 ;color: #000000;background:transparent}
 
 /* Sections */
 .section{padding:3rem 0}
